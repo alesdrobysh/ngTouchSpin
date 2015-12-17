@@ -79,6 +79,7 @@ angular.module('jkuri.touchspin', [])
 				scope.decrement();
 
 				clickStart = Date.now();
+				scope.stopSpin();
 
 				var timeout = $timeout(function() {
 					timer = $interval(function() {
